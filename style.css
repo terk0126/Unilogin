@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.LoginWrap {
+    background-color: white;
+    width: 465px;
+    height: 435px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: rgb(0 0 0 / 34%) 11px 30px 154px 2px;
+}
+
+.LoginText {
+    position: absolute;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    width: 305px;
+    height: 345px;
+    opacity: 1;
+    transition: opacity 1000ms; 
+}
+
+.LogoText {
+    font-size: 30px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+}
+
+.formGruppe {
+    margin-top: 7px;
+    width: 100%;
+    height: 100px;
+}
+
+.UserNameInput {
+    margin-top: 7px;
+    width: 269px;
+    height: 22px;
+    margin-left: 2px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-width: 1px;
+    border-radius: 6px;
+    border-color: black;
+    box-shadow: 0;
+}
+
+label[for="username"] {
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    text-transform: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+label[for="Password"] {
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    text-transform: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.PageNav {
+    width: 301px;
+    height: 100%;
+    margin-left: 2px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 14px;
+    padding-right: 14px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 89, 179);
+    border-color: rgb(69, 69, 69);
+    border-width: 2px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.PageNavWrap {
+    width: 301px;
+    height: 40px;
+}
+
+.line {
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.AndreMuligheder {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.link {
+    color: #0059b3;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.UVMLogo {
+    width: 180px;
+    height: 37px;
+    margin-right: 61.5px;
+    margin-left: 61.5px;
+}
+
+.FooterText {
+    margin-bottom: 15px;
+}
+
+.LoginButton {
+    width: 159px;
+    height: 40px;
+    margin-left: 2px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 14px;
+    padding-right: 14px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 89, 179);
+    border-color: rgb(69, 69, 69);
+    border-width: 2px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    grid-column-start: 1;
+    grid-column-start: 2;
+    margin-left: 14px;
+}
+
+.TilbageButton {
+    width: 123px;
+    height: 40px;
+    margin-left: 2px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 14px;
+    padding-right: 14px;
+    color: #1a1a1a;
+    background-color: #f5f5f5;
+    border-color: #747474;
+    border-width: 2px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.PageNavWrapPass {
+    width: 301px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: right;
+}
+
+#Username {
+  opacity: 1;
+  transition: 1s;
+}
+
+.LoginText {
+  opacity: 0;
+  transition: 1s;
+}
+
+.LoginText.fade-in {
+  opacity: 1;
+  transition: 1s;
+}
