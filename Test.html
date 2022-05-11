@@ -14,7 +14,10 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body style="background-color: #f2f2f2;">
-    <div class="LoginWrap">
+
+
+
+    <div class="LoginWrapUser Opa" id="LoginWrapUser">
         <div class="LoginText" id="Username" >
 
             <div class="LogoText">
@@ -33,7 +36,7 @@
             <div class="PageNavWrap">
 
                 <!--<button type="submit" class="PageNav" value="submit" form="FormUserName">Næste</button>-->
-                <button class="PageNav" type="button" onclick="ShowPass()">Næste</button>
+                <button class="PageNav" type="button" onclick="ShowPass();fadeinUser(document.getElementById('LoginWrapUser'))">Næste</button>
             </div>
 
             <hr class="line">
@@ -50,46 +53,52 @@
 
         <script>
             function ShowPass() {
-                var username = document.getElementById("Username");
-                var password = document.getElementById("Password");
+                var username = document.getElementById("LoginWrapUser");
+                var password = document.getElementById("LoginWrapPass");
                 username.style.display = "none"
                 password.style.display = "block"
-                fadein(password)
             }
 
             function ShowUser() {
-                var username = document.getElementById("Username");
-                var password = document.getElementById("Password");
+                var username = document.getElementById("LoginWrapUser");
+                var password = document.getElementById("LoginWrapPass");
                 username.style.display = "block"
                 password.style.display = "none"
-                fadein(username)
             }
 
-            function fadein(element) {
-                element.classList.add("fade-in");
+            function Redirect() {
+                window.location.href='http://programminghead.com'
             }
+
         </script>
+    </div>
 
 
 
-        <div class="LoginText" style="display: none;"id="Password">
+
+
+
+    <div class="LoginWrapPass Opa" id="LoginWrapPass" style="display: none;">
+
+        <div class="LoginText" id="Password">
 
             <div class="LogoText">
                 <span style="color: #015ab3;">Uni</span>login
             </div>
 
-                <div class="formGruppe">
+                <div class="formGruppe" >
 
                     <label for="Password">Adgangskode</label>
                     <input name="Password" class="UserNameInput" type="text" id="username">
+                    
 
                 </div>
             </form>
 
-                    <button type="submit" class="TilbageButton" onclick="ShowUser()">Tilbage</button>
-                    <button form="FormUserName" type="submit" class="LoginButton" value="submit" onclick="SubmitForms()">Login</button>
+                    <button type="submit" class="TilbageButton" onclick="ShowUser();fadeinPass(document.getElementById('LoginWrapPass'))" >Tilbage</button>
+                    <button form="FormUserName" type="submit" class="LoginButton" value="submit" onclick="Redirect()">Log ind</button>
 
-            <hr class="line">
+            <hr  class="line">
 
             <p class="FooterText">
                 <strong class="AndreMuligheder">Andre muligheder</strong>

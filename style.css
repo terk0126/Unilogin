@@ -3,7 +3,18 @@
     padding: 0;
 }
 
-.LoginWrap {
+.LoginWrapUser {
+    background-color: white;
+    width: 465px;
+    height: 435px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: rgb(0 0 0 / 34%) 11px 30px 154px 2px;
+}
+
+.LoginWrapPass {
     background-color: white;
     width: 465px;
     height: 435px;
@@ -22,8 +33,6 @@
     margin-bottom: 20px;
     width: 305px;
     height: 345px;
-    opacity: 1;
-    transition: opacity 1000ms; 
 }
 
 .LogoText {
@@ -89,6 +98,7 @@ label[for="Password"] {
     font-size: 20px;
     font-size: 17px;
     font-weight: 600;
+    cursor:pointer;
 }
 
 .PageNavWrap {
@@ -140,6 +150,7 @@ label[for="Password"] {
     grid-column-start: 1;
     grid-column-start: 2;
     margin-left: 14px;
+    cursor:pointer;
 }
 
 .TilbageButton {
@@ -158,6 +169,7 @@ label[for="Password"] {
     font-size: 20px;
     font-size: 17px;
     font-weight: 600;
+    cursor:pointer;
 }
 
 .PageNavWrapPass {
@@ -168,17 +180,19 @@ label[for="Password"] {
     align-content: right;
 }
 
-#Username {
-  opacity: 1;
-  transition: 1s;
-}
+#LoginWrapUser.Opa {
+    animation: fadeIn ease 1s;
+  }
 
-.LoginText {
-  opacity: 0;
-  transition: 1s;
-}
+  #LoginWrapPass.Opa {
+    animation: fadeIn ease 1s;
+  }
 
-.LoginText.fade-in {
-  opacity: 1;
-  transition: 1s;
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
 }
