@@ -185,7 +185,7 @@ label[for="Password"] {
   }
 
   #LoginWrapPass.Opa {
-    animation: fadeIn ease 1s;
+    animation: fadeIn ease 3s;
   }
 
   @keyframes fadeIn {
